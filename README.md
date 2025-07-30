@@ -1,85 +1,144 @@
-🧾 Retail Billing System
-A full-featured desktop billing application built with Python and Tkinter, designed for small retail stores. This GUI-based software supports billing for multiple product categories, automated tax calculation (GST), printing and saving bills, and even sending invoices via email—all packed into a single offline app.
+# 🧾 RETAIL BILLING SYSTEM - Python + Tkinter
 
-🚀 Features
-✅ Easy-to-use graphical interface
-✅ Auto item-wise price and GST calculation
-✅ Categories supported: 1) Cosmetics, 2) Grocery, 3) Beverages
-✅ Customer details input (Name, Phone Number)
-✅ Generates formatted printable receipts
-✅ Email support: Send invoices from the app
-✅ Save and search previous bills by bill number
-✅ Clean/reset form functionality
-✅ Setup script for easy installation
+A complete **desktop-based billing software** built using **Python and Tkinter**, ideal for small to mid-scale retail shops. The application provides a clean GUI for generating itemized bills, calculating taxes, and printing or emailing the final invoice. This project demonstrates how Python can be used to build real-world applications using built-in GUI tools.
 
-🧱 Technologies Used
-Tool	Purpose
-Python 3.x	Main programming language
-Tkinter	GUI development
-smtplib	Email sending
-tempfile & os	File handling for printing and saving
-setup.py	To package the application
+---
 
-📁 File Structure
-bash
-Copy
-Edit
+## 📌 KEY FEATURES
+
+✅ **GUI Application** using Tkinter  
+✅ **Category-wise billing** (Cosmetics, Grocery, Beverages)  
+✅ **Automatic price + tax (GST) calculation**  
+✅ **Customer info input** (Name, Phone Number)  
+✅ **Formatted receipt generation**  
+✅ **Print and Save bill** (.txt format)  
+✅ **Email invoice** directly via SMTP (Gmail)  
+✅ **Search previous bills** by bill number  
+✅ **Easy Reset/Clear** function  
+✅ Comes with **icon** and **screenshot** for branding and UI preview  
+✅ Includes `setup.py` for easy packaging and deployment
+
+---
+
+## 🧱 TECHNOLOGIES USED
+
+| Component      | Description                    |
+|----------------|--------------------------------|
+| Python 3.x     | Core programming language      |
+| Tkinter        | GUI creation                   |
+| `smtplib`      | Email sending (SMTP)           |
+| `os`, `tempfile`, `random` | File & temp management |
+| `.ico` file    | Custom window icon             |
+
+---
+
+## 📁 PROJECT STRUCTURE
+
+```
+
 Retail-Billing-System/
 │
-├── Billing.py          # Main GUI application
-├── setup.py            # Setup script for installation
-├── bills/              # Auto-generated folder to store saved bill files
-├── icon.ico            # Optional application icon
-├── README.md           # Project documentation
+├── Billing.py           # Main application script
+├── setup.py             # Setup configuration for packaging
+├── icon.ico             # Custom icon for GUI window
+├── billing.png            # GUI Screenshot (for README)
+├── bills/               # Folder where saved bills (.txt) are stored
+└── README.md            # Project documentation
 
+````
 
-🖥 Installation
-📦 Option 1: Run Directly
-Make sure Python 3.x is installed.
+---
 
-Install any required dependencies:
+## 🖼 SCREENSHOT
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Launch the app:
+<p align="center">
+  <img src="billing.png" alt="Retail Billing System GUI" width="700"/>
+</p>
 
-bash
-Copy
-Edit
+---
+
+## ⚙️ HOW TO RUN
+
+### OPTION 1: Run Directly (Best for Development)
+
+1. Install Python 3.x from [python.org](https://www.python.org/)
+
+2. CLONE THE REPOSITORY:
+```bash
+git clone https://github.com/your-username/retail-billing-system.git
+cd retail-billing-system
+````
+
+3. RUN THE APP:
+
+```bash
 python Billing.py
+```
 
-🛠 Option 2: Install with setup.py
-bash
-Copy
-Edit
+---
+
+### OPTION 2: Install via `setup.py`
+
+You can install the app using the Python setup tools:
+
+```bash
 python setup.py install
+```
 
-📸 Screenshots
-(You can add images here of your GUI interface)
-![App Screenshot](screenshots/app-main.png)
-Example:
+You can then run the app from the installed location.
 
-css
-Copy
-Edit
-🧪 Example Use Case
-Perfect for:
+---
 
-Retail shopkeepers needing a quick offline billing tool
+## 📦 REQUIREMENTS
 
-College mini projects (Python GUI)
+No external libraries are strictly required, but for completeness:
 
-Anyone learning real-world Tkinter development
+```bash
+pip install -r requirements.txt
+```
 
-❗ Notes
-Ensure internet is active while using the email feature.
+(If needed, create `requirements.txt` with `pip freeze > requirements.txt`)
 
-Set up "App Password" in Gmail if using two-factor authentication.
+---
 
-📬 Contact
-Made by [Your Name]
-📧 [youremail@example.com]
-🔗 LinkedIn
+## 📧 E-MAIL SENDING SETUP
+
+The app uses `smtplib` to send emails. To use Gmail:
+
+1. Enable **"Less Secure Apps"** or **App Passwords** in your Gmail account.
+2. Input sender Gmail, password, and recipient in the popup window.
+3. The bill is auto-attached in the body text.
+
+---
+
+## 🔐 PRIVACY & SECURITY
+
+* Passwords entered in the email popup are not stored.
+* Bills are saved locally in the `bills/` folder.
+* No internet connection is required unless using the email feature.
+
+---
+
+## 🚀 USE CASE
+
+* Local shops or supermarket kiosks needing a simple POS system
+* Python GUI mini-project for students
+* Base model for more advanced POS or inventory systems
+
+---
+
+## 🧑‍💻 AUTHOR
+
+**\Vinamra Gupta**
+📧 (gvinamra73@gmail.com)
+🌐 (www.linkedin.com/in/vinamra-gupta-0aa4b4375)
+
+---
+
+## 📄 LICENSE
+
+This project is open source and available under the [MIT License](LICENSE).
+
+
+
 
