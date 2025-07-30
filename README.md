@@ -129,7 +129,7 @@ The app uses `smtplib` to send emails. To use Gmail:
 
 ## 🧑‍💻 AUTHOR
 
-**\Vinamra Gupta**
+**Vinamra Gupta**
 📧 (gvinamra73@gmail.com)
 🌐 (www.linkedin.com/in/vinamra-gupta-0aa4b4375)
 
